@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=<device-width>, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        /* 
+            将所有段落设置成红色
+
+            语速选择器
+                作用：根据标签名来选择指定元素
+                语法：标签名{}
+                例子：p{} h1{} div{}
+
+            将一个变成红色 儿童相见不相识
+
+            id选择器
+                作用：根据元素id选择一个元素
+                语法：#id属性值{}
+                例子：#box{} #red{}
+
+            将秋水。。。与落霞。。。设置成蓝色
+
+            类选择器
+                作用：根据元素的class值选中一组元素
+                语法：.class属性值{}
+*/
+        /* p{
+            color:green;
+        } */
+        .blue{
+            color:blue;
+        }
+        #red{
+            color:red;
+        }
+        .abc{
+            font-size:30px;
+        }
+        /* 通配选择器
+            作用：选中所有元素
+            语法：*
+             */
+        /* *{
+            color:red;
+        } */
+    </style> 
+
+</head>
+<body>
+    <h1 class="blue abc">我是标题</h1>
+    <p>少小离家老大回</p>
+    <p>乡音无改鬓毛衰</p>
+    <p id="red">儿童相见不相识</p>
+    <p>笑问客从何处来</p>
+    <!-- class 是一个标签属性，与id类似，不同的是class可以重复使用
+         可以通过class为元素分组
+        可以为一个元素设置多个属性 -->
+    <p class="blue">落霞与孤鹜齐飞</p>
+    <p class="blue">秋水共长天一色</p>
+</body>
+</html>

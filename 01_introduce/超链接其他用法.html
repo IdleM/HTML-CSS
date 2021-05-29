@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <!-- 
+        target属性
+            -用来指定超链接打开的位置
+            -可选值
+                -_self 默认值，在当前页面中打开超链接；
+                -_blank 在一个新的页面中打开超链接（容易造成网页数量过多）。
+            
+     -->
+    <a href="列表.html" target="_self">超链接</a>
+    <br>
+    <a href="#bottom">去底部</a>
+    <br>
+    <a href="#p3">去第三段</a>
+    <br>
+    <!-- 在开发中，可以将#作为超链接的占位符使用。 -->
+    <a href="#">这是一个新的超链接</a>
+    <br>
+    <!-- javascript:;作为超链接的href,点击连接后什么都不会发生。 -->
+    <a href="javascript:;">这是一个新的超链接</a>
+    <p>与妻书
+        意映卿卿如晤 </p>
+    <p>与妻书
+        意映卿卿如晤 </p>
+    <p id="p3">与妻书
+        意映卿卿如晤
+      。 [1] </p>
+   
+        <!-- 
+            可以直接将超链接的属性设置为#,这样点击超链接以后，页面不会发生跳转，而是转到页面顶部的位置。
+            
+            可以跳转到页面的指定位置，只需要将href的属性设置为#目标元素的id值
+
+            id属性（唯一，不重复）
+                -每一个标签都可以添加一个id属性，
+                -id属性是元素的唯一标识，同一个页面不能与前面的id重复。
+         -->
+         <br>
+         <a id="bottom" href="#">回到顶部</a>
+</body>
+</html>

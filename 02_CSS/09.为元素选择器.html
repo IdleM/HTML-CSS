@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        /* 
+            伪元素：在页面中表示一些特殊的并不真实存在的元素（特殊的位置）
+                使用::开头
+
+                ::first-letter 第一个字母
+                ::first-line 表示第一行
+                ::selection 表示选中的内容
+                ::before 元素的起始位置
+                ::after 元素的最后
+                    -before与after必须结合content属性来使用
+         */
+        p::first-letter{
+            font-size:30px;
+        }
+        p::first-line{
+            background-color:aqua;
+        }
+        p::selection{
+            background-color:rgb(156, 241, 19);
+        }
+        div::before{
+            content:'👉'
+        }
+        div::after{
+            content:"👈"
+        }
+    </style>
+</head>
+<body>
+    <div>good good study,day day up!</div>
+    <p>
+        The design of offshore wind power infrastructure form is an extremely vital part of the whole offshore wind power design and the design of offshore wind power foundation is a complex process involving various factors such as marine environment and wind conditions. 
+    </p>
+    
+</body>
+</html>
